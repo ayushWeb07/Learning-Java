@@ -8,6 +8,17 @@ public class Employee {
     String role;
     char gender;
 
+    public Employee() {
+        System.out.println("Default constructor calling....");
+
+        this.firstName= "John";
+        this.lastName= "Doe";
+        this.age= 18;
+        this.salary= 19491.1994;
+        this.role= "SDE 2";
+        this.gender= 'm';
+    }
+
     byte getAge() {
         return this.age;
     }
