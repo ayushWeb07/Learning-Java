@@ -6,6 +6,19 @@ public class Car {
     double price;
     int hp;
 
+    {
+        this.color= "black";
+        this.brand= "bmw m5";
+    }
+
+    {
+        this.price= 80000.00;
+    }
+
+    {
+        this.hp= 1300;
+    }
+
     void accelerate() {
         System.out.println("Car accelerating...");
     }
