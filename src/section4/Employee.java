@@ -9,14 +9,20 @@ public class Employee {
     char gender;
 
     public Employee() {
-        System.out.println("Default constructor calling....");
+        this("Virat", "Kohli", (byte) 38, 140000000.99, "Cricketer", 'm');
 
-        this.firstName= "John";
-        this.lastName= "Doe";
-        this.age= 18;
-        this.salary= 19491.1994;
-        this.role= "SDE 2";
-        this.gender= 'm';
+        System.out.println("Default constructor calling....");
+    }
+
+    public Employee(String firstName, String lastName, byte age, double salary, String role, char gender) {
+        System.out.println("Parameterized constructor calling....");
+
+        this.firstName= firstName;
+        this.lastName= lastName;
+        this.age= age;
+        this.salary= salary;
+        this.role= role;
+        this.gender= gender;
     }
 
     byte getAge() {
