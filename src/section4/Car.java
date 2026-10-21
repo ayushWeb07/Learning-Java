@@ -6,6 +6,15 @@ public class Car {
     double price;
     int hp;
 
+    public static final byte NUM_CYLINDERS;
+    public static final char CAR_TYPE;
+
+    static {
+        NUM_CYLINDERS= 8;
+        CAR_TYPE= 'S';
+    }
+    
+
     {
         this.color= "black";
         this.brand= "bmw m5";

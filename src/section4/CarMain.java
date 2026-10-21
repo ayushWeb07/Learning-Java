@@ -8,5 +8,8 @@ public class CarMain {
         System.out.println(c.brand);
         System.out.println(c.price);
         System.out.println(c.hp);
+
+        System.out.println(Car.CAR_TYPE);
+        System.out.println(Car.NUM_CYLINDERS);
     }
 }
