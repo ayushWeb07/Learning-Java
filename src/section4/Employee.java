@@ -8,6 +8,8 @@ public class Employee {
     String role;
     char gender;
 
+    public static final String COMPANY_NAME= "Ayush Corp";
+
     public Employee() {
         this("Virat", "Kohli", (byte) 38, 140000000.99, "Cricketer", 'm');
 
