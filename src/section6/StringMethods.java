@@ -43,5 +43,18 @@ public class StringMethods {
         System.out.println(c);
         System.out.println(c.replace('F', 'l').replace('b', 's'));
         System.out.println(c.replace("Fucking", "Fuckinnggggg"));
+
+        // string splitting
+        String st= "M5, Ruvelto, Hurrican, Veyron, Chiron, SF9";
+        String[] stArr= st.split(", ");
+
+        System.out.println();
+
+        for (int i=0; i<stArr.length; i++) {
+            System.out.println(stArr[i]);
+        }
+
+        String ref= String.join(", ", stArr);
+        System.out.println(ref);
     }
 }
