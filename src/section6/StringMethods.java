@@ -26,5 +26,22 @@ public class StringMethods {
         // upper and lowercase
         System.out.println(full.toUpperCase());
         System.out.println(full.toLowerCase());
+
+        // searching
+        System.out.println(c.indexOf("best"));
+        System.out.println(c.contains("be"));
+        System.out.println(c.startsWith("be"));
+        System.out.println(c.endsWith("best"));
+
+        // substrings
+        String h1= c.substring(8);
+        String h2= c.substring(0, 7);
+        System.out.println(h1);
+        System.out.println(h2);
+
+        // replacing characters
+        System.out.println(c);
+        System.out.println(c.replace('F', 'l').replace('b', 's'));
+        System.out.println(c.replace("Fucking", "Fuckinnggggg"));
     }
 }
