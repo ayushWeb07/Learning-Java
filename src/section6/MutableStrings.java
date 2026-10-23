@@ -19,5 +19,16 @@ public class MutableStrings {
         String p= st.toString();
         String n= st.reverse().toString();
         System.out.printf("Is string palindrome: %b%n", p.equals(n));
+
+        // text blocks
+        String m= """
+                %n
+                - I am %s
+                - Age: %d
+                - Net worth: $%.2f
+                - Has high testosterone: %b%n
+                """;
+
+        System.out.printf(m, "Ayush", 19, 1999491.99, true);
     }
 }
