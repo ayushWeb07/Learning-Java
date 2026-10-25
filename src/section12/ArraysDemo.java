@@ -80,5 +80,12 @@ public class ArraysDemo {
         Arrays.parallelSort(nums2);
         System.out.println();
         show(nums2);
+
+        // 5. binary search
+        System.out.println();
+
+        int[] nums3= {1, 5, 2, 4, 3}; // -> 1, 2, 3, 4, 5
+        Arrays.sort(nums3);
+        System.out.println(Arrays.binarySearch(nums3, 3));
     }
 }
