@@ -8,4 +8,8 @@ public interface Vehicle {
     void stop();
 
     String whatsMyType();
+
+    default String myGrassRoot() {
+        return "My grassroot background: I'm a fucking vehicle";
+    }
 }

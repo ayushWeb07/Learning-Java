@@ -15,4 +15,9 @@ public class Bike implements Vehicle{
     public String whatsMyType() {
         return "I'm a Bike";
     }
+
+    @Override
+    public String myGrassRoot() {
+        return "My grassroot background: I'm a fucking bike";
+    }
 }

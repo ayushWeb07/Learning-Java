@@ -7,11 +7,15 @@ public class Demo {
         System.out.println(c.whatsMyType());
         c.start();
         c.stop();
+        System.out.println(c.myGrassRoot());
+
+        System.out.println();
 
         // create object of reference type Vehicle interface, but stores instance of bike class
         Vehicle b= new Bike();
         System.out.println(b.whatsMyType());
         b.start();
         b.stop();
+        System.out.println(b.myGrassRoot());
     }
 }
