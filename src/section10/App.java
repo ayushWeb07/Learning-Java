@@ -10,5 +10,12 @@ public class App {
         uf.setDivision("Lightweight");
 
         uf.printDetails();
+
+        // overloading demo
+        Maths m= new Maths(12, 5);
+        m.show("hey", "world");
+        m.show("hey", "world", "!");
+        m.show(10, "hey");
+        m.show("hi", 15);
     }
 }
