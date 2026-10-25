@@ -45,7 +45,7 @@ public class ArraysDemo {
         }
 
         System.out.println();
-        ArraysDemo.show(n1);
+        show(n1);
 
         // using system
         int[] o2= {4, 5, 6};
@@ -53,12 +53,32 @@ public class ArraysDemo {
         System.arraycopy(o2, 0, n2, 0, o2.length);
 
         System.out.println();
-        ArraysDemo.show(n2);
+        show(n2);
 
         // using array
         int[] o3= {7, 8, 9};
         int[] n3= Arrays.copyOf(o3, o3.length + 2);
         System.out.println();
-        ArraysDemo.show(n3);
+        show(n3);
+
+        // 4. sorting
+
+        // using sort
+        System.out.println();
+
+        int[] nums1= {5, 1, 4, 3, 2};
+        show(nums1);
+        Arrays.sort(nums1);
+        System.out.println();
+        show(nums1);
+
+        // using parallel sort
+        System.out.println();
+
+        int[] nums2= {10, 6, 9, 7, 8};
+        show(nums2);
+        Arrays.parallelSort(nums2);
+        System.out.println();
+        show(nums2);
     }
 }
