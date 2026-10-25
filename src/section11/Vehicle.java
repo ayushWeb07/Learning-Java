@@ -12,4 +12,8 @@ public interface Vehicle {
     default String myGrassRoot() {
         return "My grassroot background: I'm a fucking vehicle";
     }
+
+    static String sayHello() {
+        return "Hello from interface";
+    }
 }

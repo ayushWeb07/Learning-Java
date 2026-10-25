@@ -1,5 +1,7 @@
 package section11;
 
+import jdk.dynalink.beans.BeansLinker;
+
 public class Demo {
     public static void main(String[] args) {
         // create object of type car
@@ -17,5 +19,11 @@ public class Demo {
         b.start();
         b.stop();
         System.out.println(b.myGrassRoot());
+
+        System.out.println();
+
+        // call the static method of interface
+        System.out.println(Vehicle.sayHello());
+        System.out.println(Bike.sayHello());
     }
 }

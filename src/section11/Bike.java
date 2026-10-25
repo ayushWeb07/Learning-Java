@@ -20,4 +20,8 @@ public class Bike implements Vehicle{
     public String myGrassRoot() {
         return "My grassroot background: I'm a fucking bike";
     }
+
+    static String sayHello() {
+        return "Hello from Bike";
+    }
 }
