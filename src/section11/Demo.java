@@ -25,5 +25,11 @@ public class Demo {
         // call the static method of interface
         System.out.println(Vehicle.sayHello());
         System.out.println(Bike.sayHello());
+
+        System.out.println();
+
+        // create instance of functional interface
+        Lover l= new Kabir();
+        l.love();
     }
 }
