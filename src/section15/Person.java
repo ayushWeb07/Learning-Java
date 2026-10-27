@@ -1,5 +1,7 @@
 package section15;
 
+import java.util.Objects;
+
 public class Person {
     private String name;
     private int age;
@@ -39,5 +41,21 @@ public class Person {
 
     public void setIgId(String ig_id) {
         this.ig_id = ig_id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.name, this.age, this.ig_id);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+
+        if ((obj == null) || (this.getClass() != obj.getClass())) return false;
+
+        Person p= (Person) obj;
+
+        return ((this.name.equals(p.getName())) && (this.age == p.getAge()) && (this.ig_id.equals(p.getIgId())));
     }
 }
