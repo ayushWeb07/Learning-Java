@@ -58,4 +58,13 @@ public class Person {
 
         return ((this.name.equals(p.getName())) && (this.age == p.getAge()) && (this.ig_id.equals(p.getIgId())));
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + this.name + '\'' +
+                ", age=" + this.age +
+                ", ig_id='" + this.ig_id + '\'' +
+                '}';
+    }
 }
