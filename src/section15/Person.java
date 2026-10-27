@@ -2,7 +2,7 @@ package section15;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Cloneable {
     private String name;
     private int age;
     private String ig_id;
@@ -66,5 +66,10 @@ public class Person {
                 ", age=" + this.age +
                 ", ig_id='" + this.ig_id + '\'' +
                 '}';
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
