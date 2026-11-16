@@ -1,7 +1,9 @@
 package section20;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 public class HashmapDemo {
     public static void main(String[] args) {
@@ -40,7 +42,26 @@ public class HashmapDemo {
 
         System.out.println();
 
+        // iteration method 1
+        Set<Integer> kS= shirts.keySet();
+        Iterator<Integer> it= kS.iterator();
 
+        while (it.hasNext()) {
+            int k= it.next();
+            String v= shirts.get(k);
+            System.out.printf("%d -> %s%n", k, v);
+        }
 
+        System.out.println();
+
+        // iteration method 2
+        Set<Map.Entry<Integer, String>> entries = shirts.entrySet();
+        Iterator<Map.Entry<Integer, String>> iterator = entries.iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<Integer, String> entry = iterator.next();
+            Integer key = entry.getKey();
+            String value = entry.getValue();
+            System.out.printf("%d -> %s%n", key, value);
+        }
     }
 }
