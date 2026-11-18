@@ -41,5 +41,13 @@ public class DatetimeDemo {
         LocalDate u2= bd.withYear(2008).withMonth(7).withDayOfMonth(9);
         System.out.println(u1);
         System.out.println(u2);
+        System.out.println();
+
+        // get the minute details
+        int y= bd.getYear();
+        int m= bd.getMonthValue();
+        int day= bd.getDayOfMonth();
+        System.out.printf("day: %d | month: %d | year: %d", day, m, y);
+
     }
 }
