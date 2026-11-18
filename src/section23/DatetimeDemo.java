@@ -48,6 +48,17 @@ public class DatetimeDemo {
         int m= bd.getMonthValue();
         int day= bd.getDayOfMonth();
         System.out.printf("day: %d | month: %d | year: %d", day, m, y);
+        System.out.println();
+
+        // plus and substract
+        LocalDate p1= bd.plusDays(2);
+        LocalDate p2= bd.plusMonths(3);
+        LocalDate p3= bd.plusWeeks(5);
+        LocalDate p4= bd.plusYears(7);
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(p3);
+        System.out.println(p4);
 
     }
 }
