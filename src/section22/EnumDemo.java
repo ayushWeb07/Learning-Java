@@ -1,5 +1,7 @@
 package section22;
 
+import java.util.EnumSet;
+
 public class EnumDemo {
     public static void main(String[] args) {
 
@@ -34,6 +36,20 @@ public class EnumDemo {
         System.out.println();
 
         for (AdvancedTaskStatusEnum advancedTaskStatusEnum: AdvancedTaskStatusEnum.values()) {
+            String name= advancedTaskStatusEnum.name();
+            int ord= advancedTaskStatusEnum.ordinal();
+            int daysBeforeCompletion= advancedTaskStatusEnum.getDaysBeforeCompletion();
+            String message= advancedTaskStatusEnum.getMessage();
+
+            System.out.printf("%s | %d | %d | %s%n", name, ord, daysBeforeCompletion, message);
+        }
+
+        // get the enum set
+        System.out.println();
+
+        EnumSet<AdvancedTaskStatusEnum> advancedTaskStatusEnums = EnumSet.allOf(AdvancedTaskStatusEnum.class);
+
+        for (AdvancedTaskStatusEnum advancedTaskStatusEnum: advancedTaskStatusEnums) {
             String name= advancedTaskStatusEnum.name();
             int ord= advancedTaskStatusEnum.ordinal();
             int daysBeforeCompletion= advancedTaskStatusEnum.getDaysBeforeCompletion();
