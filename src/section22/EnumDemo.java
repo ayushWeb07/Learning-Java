@@ -29,5 +29,17 @@ public class EnumDemo {
 
             System.out.printf("%s -> %d%n", name, ord);
         }
+
+        // print the values of advanced task status enum
+        System.out.println();
+
+        for (AdvancedTaskStatusEnum advancedTaskStatusEnum: AdvancedTaskStatusEnum.values()) {
+            String name= advancedTaskStatusEnum.name();
+            int ord= advancedTaskStatusEnum.ordinal();
+            int daysBeforeCompletion= advancedTaskStatusEnum.getDaysBeforeCompletion();
+            String message= advancedTaskStatusEnum.getMessage();
+
+            System.out.printf("%s | %d | %d | %s%n", name, ord, daysBeforeCompletion, message);
+        }
     }
 }
